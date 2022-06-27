@@ -1,0 +1,14 @@
+output_dir: './results'          # output directory
+num_train_epochs: 20             # total number of training epochs
+per_device_train_batch_size: 1   # batch size per device during training
+per_device_eval_batch_size: 10   # batch size for evaluation
+warmup_steps: 1000               # number of warmup steps for learning rate scheduler
+weight_decay: 0.01               # strength of weight decay
+do_train: True                   # Perform training
+do_eval: True                    # Perform evaluation
+evaluation_strategy: "epoch"     # evalute after eachh epoch
+gradient_accumulation_steps: 64  # total number of steps before back propagation
+fp16: True                       # Use mixed precision
+fp16_opt_level: "02"             # mixed precision mode
+run_name: "ProBert-HIV-1"        # experiment name
+seed: 3                          # Seed for experiment reproducibility 3x3
