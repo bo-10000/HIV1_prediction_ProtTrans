@@ -6,7 +6,7 @@ This repository is for the prediction of HIV-1 protease cleavage by using pretra
 
 - **ProtTrans** is pretrained language model for proteins. In this project, we used two models from ProtTrans - **ProtBert, ProtAlbert**.
 - We 1) *load the pretrained models* and then 2) *fine-tune them using the HIV-1 protease cleavage dataset.* 
-- The code for pretraining is modified from the ProtTrans github (https://github.com/agemagician/ProtTrans)
+- The code for fine-tuning is modified from the ProtTrans github (https://github.com/agemagician/ProtTrans)
 </br></br>
 
 ## Dataset preparation
