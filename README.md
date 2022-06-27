@@ -40,7 +40,7 @@ You can fine-tune the pretrained model by:
 **1. ProtBERT**
 
 ```
-trainer = HIVTrainer(train_data='746', model_name='Rostlab/prot_bert')
+trainer = HIVTrainer(train_data='746', model_name='Rostlab/prot_bert', training_args_path='training_args.yaml')
 trainer.train()
 
 trainer.test(test_data='1625')
@@ -49,11 +49,12 @@ trainer.test(test_data='1625')
 **2. ProtAlBERT**
 
 ```
-trainer = HIVTrainer_Albert(train_data='746', model_name='Rostlab/prot_albert')
+trainer = HIVTrainer_Albert(train_data='746', model_name='Rostlab/prot_albert', training_args_path='training_args.yaml')
 trainer.train()
 
 trainer.test(test_data='1625')
 ```
 </br>
-We tested our code on two models (ProtBert, ProtAlBERT), but you can also try models in ProtTrans. More models can be found at: https://huggingface.co/Rostlab
-</br></br>
+
+- We tested our code on two models (ProtBert, ProtAlBERT), but you can also try models in ProtTrans. More models can be found at: https://huggingface.co/Rostlab
+- You can change training arguments by changing the `training_args.yaml` or create your own .yaml file.
